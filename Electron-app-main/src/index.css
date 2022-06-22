@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  
+  background: #b0d7f4e7;
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  
+}
+.flex{
+  display: flex;
+
+  width: 800px;
+}
+.flex > button {
+  margin: 90px;
+ 
+}
+#sidebar{
+  background: rgb(155, 169, 224);
+
+}
+
+header {
+  width: 100%;
+  height: 10vh;
+  background: rgb(227, 232, 252);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header span {
+  color: rgb(7, 252, 7);
+}
+
+section {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    justify-content : space-between
+;
+}
+
+button {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 2px rgb(136, 169, 229) solid;
+  cursor: pointer;
+  color: white;
+  font-size: 22px;
+  background: #8cb0ed;
+  animation-name: clignote;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+#btnsize{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 2px rgb(148, 215, 125) solid;
+  cursor: pointer;
+  color: white;
+  font-size: 22px;
+  background: rgb(127, 246, 97);
+  animation-name: clignote;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+
+}
+
+#btnsize:hover{
+  background: red;
+}
+#btnnmbr{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: 2px rgb(180, 183, 179) solid;
+  cursor: pointer;
+  color: white;
+  font-size: 22px;
+  background: rgb(193, 196, 192);
+  animation-name: clignote; 
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+#btnnmbr:hover{
+  background: red;
+}
+button:hover {
+  background: red;
+}
+@keyframes clignote {
+  0% {
+    box-shadow: 0px 0px 12px #4183c4;
+  }
+  50% {
+    box-shadow: 0px 0px 0px #4183c4;
+  }
+  100% {
+    box-shadow: 0px 0px 12px #4183c4;
+  }
+}
+#txt {
+  margin-bottom: 2%;
+  font-weight: 400;
+}
+#myProgress {
+  width: 60%;
+  display: none;
+  text-align: center;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: #4caf50;
+}
+#sizes{
+  display: none;
+}

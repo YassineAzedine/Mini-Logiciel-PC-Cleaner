@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="index.css">
+   <script src="http://underscorejs.org/underscore-min.js"></script>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>UPC</title>
+</head>
+<body>
+    <!-- Sidebar -->
+
+    <header><h2><span>Youcode</span> PC Cleaner</h2></header>
+    
+    <header id="sizes"><h2 > Size Total : </h2></header>
+    <div class="w3-sidebar w3-bar-block w3-large " style="width:25%" id="sidebar">
+       
+        <a onclick="move()" href="#" class="w3-bar-item w3-button w3-padding-16 text-center">Clean</a>
+        <a  onclick="size()" href="#" class="w3-bar-item w3-button w3-padding-24">Analyze</a>
+        <a onclick="home()" href="#" class="w3-bar-item w3-button w3-padding-32">Return</a>
+      </div>
+      <div style="margin-left:14%">
+        <div class="w2-container">
+    <section >  
+        <div id="myProgress">
+            
+            <h3 id='txt'>Cheking temporary files...</h3>
+        <div id="myBar"></div>
+        </div>
+<div class="flex">
+    <button id="btn" onclick="move()"> 
+         <img src="img/le-nettoyage-des-vitres.png" alt="" srcset="" style="width: 50%;">
+    </button>
+
+    <button id="btnsize" onclick="size()">
+        <img src="img/une-analyse.png" alt="" srcset="" style="width: 50%;">
+    </button>
+    <button id="btnnmbr" onclick="history()">
+        <img src="img/history.png" alt="" srcset="" style="width: 50%;">
+    </button>
+
+    <button id="btn2" onclick="home()">Return</button>
+   
+
+</div>
+    </section>
+    </div>
+</div>
+<script src="fsFile.js"></script>
+
+
+</body>
+</html>

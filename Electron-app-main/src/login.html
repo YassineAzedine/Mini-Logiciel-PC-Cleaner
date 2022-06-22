@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login And Registration page</title>
+  </head>
+  <body>
+    <form  class="form">
+      <div class="action">
+        <span class="load show" id="login-action" onclick="openLoginPage()"
+          >Login</span
+        >
+        <span class="load" onclick="openRegPage()" id="reg-action"
+          >Register</span
+        >
+      </div>
+      <div class="login show-page">
+        
+        <input   id="email" type="email" placeholder="Email..." />
+        <input    id="password"  type="password" placeholder="Password" />
+        <button  id="login">Login</button>
+        <a href="#" onclick="openRegPage()">Register</a>
+      </div>
+      <div class="reg">
+        <input id="username" autocomplete="true" type="text" placeholder="Username" />
+        <input id="emailreg" autocomplete="true"  type="email" placeholder="Email" />
+        <input id="passwordreg" autocomplete="true"  type="password" placeholder="Password" />
+        <button id="register">Register</button>
+        <a href="#" onclick="openLoginPage()">Login</a>
+      </div>
+    </form>
+    <!-- <script src="login.js"></script> -->
+    <script src="register.js"></script>
+
+  </body>
+
+ <!-- <script>
+
+
+window.onload = function() { 
+ console.log('clicked');
+ let email = document.getElementById("email")
+  console.log("🚀 ~ file: login.js ~ line 11 ~ email", email)
+ 
+  let password = document.getElementById("password")
+ let btnlogin = document.getElementById("login")
+ console.log("🚀 ~ file: login.js ~ line 15 ~ btnlogin", btnlogin)
+
+  btnlogin.onclick = function(e){
+    e.preventDefault()
+  console.log('login');
+
+    
+   const obj = {email:email.value, password:password.value }
+
+   invoke("login", obj)
+  }
+}
+
+ </script> -->
+
+  <script>
+    function openLoginPage() {
+      document.querySelector(".reg").classList.remove("show-page");
+      document.querySelector(".login").classList.add("show-page");
+      document.getElementById("login-action").classList.add("show");
+      document.getElementById("reg-action").classList.remove("show");
+    }
+    function openRegPage() {
+      document.querySelector(".reg").classList.add("show-page");
+      document.querySelector(".login").classList.remove("show-page");
+      document.getElementById("reg-action").classList.add("show");
+      document.getElementById("login-action").classList.remove("show");
+    }
+  </script>
+  
+</html>
